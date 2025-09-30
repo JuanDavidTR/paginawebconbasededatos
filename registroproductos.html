@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Producto</title>
+    <link rel="stylesheet" type="text/css" href="css/style1produc.css">
+    <link rel="icon" href="img/logo.jpg">
+</head>
+<body>
+    <header> 
+        <div class="logo"> <!-- Encabezado-->
+				<img src="img/logo4.jpg">
+				<h2 class="nombre">STOREGAMES</h2>
+		</div>
+		<li><a href="Usuarios.html">Usuarios</a></li>
+		<li><a href="Servicios.html">Servicios</a></li>
+		<li><a href="Datos Empresa.html">Datos</a></li>
+        <li><a href="index.html">Home</a></li>
+	</header>
+
+    <section>
+         <div class="container">
+                <form class="form">
+                <h2>Registro de Productos</h2>
+                <p>Ingresar la información del producto</p>
+
+                <input class="caja" type="number" name="ID" placeholder="🎮 ID del producto" required><br><br>
+
+                <input class="caja" type="text" name="Titulo" placeholder="Titulo del producto" required><br><br>
+
+                <input class="caja" type="text" name="Genero" placeholder="Genero del juego" required><br><br>
+
+                <input class="caja" type="text" name="Plataforma" list="plataformas" placeholder="🖥Seleccione Plataforma" required><br><br>
+                <datalist id="plataformas">
+                    <option value="Nintendo Switch"></option>
+                    <option value="PlayStation"></option>
+                    <option value="Xbox"></option>
+                    <option value="PC"></option>
+                </datalist>
+
+                <input class="caja" type="text" name="Desarrollador" placeholder="🏢Ingrese nombre del desarrollador" required><br><br>
+
+                <label for="fecha">📅 Ingrese fecha de lanzamiento:</label>
+                <input class="caja" type="date" id="fecha" name="FechaLanzamiento" required><br><br>
+
+                <input class="caja" type="number" step="0.01" name="Precio" placeholder="💲 Precio en COP" required><br><br>
+
+                <input class="caja" type="text" name="Clasificacion" list="clasificaciones" placeholder="Ingrese la Clasificación del juego" required><br><br>
+                <datalist id="clasificaciones">
+                    <option value="E"></option>
+                    <option value="E10+"></option>
+                    <option value="T"></option>
+                    <option value="M"></option>
+                </datalist>
+
+                <input class="caja" type="text" name="Usuario" placeholder="👤 Usuario de registro" required><br><br>
+
+                <input class="caja" type="password" name="Password1" placeholder="🔑 Contraseña de registro" required><br><br>
+
+                <input class="caja" type="password" name="Password2" placeholder="🔑 Repita la contraseña" required><br><br>
+
+                <button>Registrar producto</button>
+                <p><a href="login.html">¿Ya tengo cuenta?</a></p>
+
+        </form>
+
+        <div class="imglogin">
+            <img src="img/imglogin.jpg" alt="Producto">
+        </div>
+
+    </div>
+    </section>
+</body>
+</html>
