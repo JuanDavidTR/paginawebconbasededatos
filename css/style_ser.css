@@ -1,0 +1,1087 @@
+/* Barra de navegación productos */
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+list-style: none;
+}
+
+header a{
+  font-size: 28px;
+  padding-right: 60px;
+}
+
+
+
+.logo{
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
+	font-weight: 600;
+	font-size: 25px;
+  margin-top: 10px;
+}
+
+
+navegacion{ 
+	display: flex;
+	height: 80px;
+	background-color: rgb(255, 255, 255);
+	align-items: center;
+	padding: 10px;
+  font-size: 20px;
+}
+
+navegacion img{
+	height: 80px;
+	align-items: center;
+	margin-left: 70px;
+	margin-right: 20px;
+  margin-top: 30px; 
+  text-align: center;
+}
+
+navegacion a{
+  font-size: 28px;
+ 
+}
+
+a{
+	text-decoration: none;
+	color:rgb(119, 0, 255);
+	font-weight: 600;
+	padding-right: 60px;
+	font-size: 20px;
+	padding-bottom: 0;
+}
+
+a:hover{
+	color: black;
+}
+
+
+
+
+
+
+/* Fin barra de navegacion de productos */
+
+/*Mensaje de inicio*/
+
+inicio h2{
+
+ 	text-align: center;                
+    font-family: "Times New Roman", serif; 
+    color: black;                    
+    background-color: #ffffff ;         
+    padding: 11px;                     
+    margin: 0px;  
+   
+}
+/*Fin mensaje de inicio*/
+
+
+
+
+/* Titulo juegos de play*/
+.tituloPlay {
+
+	text-align: center;
+	font-family: "Times New Roman", serif;
+	padding: 40px; 
+   	background-color: #00278A;
+   	color: white;
+}
+
+ /* Fin titulo juegos de play*/
+
+
+
+
+ /* Contenerdor de los juegos*/
+
+.juegosplay{
+
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    width: 100%;            
+    margin-top:0;
+    font-family: "Times New Roman", serif;
+
+}
+
+/* fin contenedor de los juegos*/
+
+
+
+/* Parametros dentro de los contenedores*/
+
+.juegoplay {
+    background-color: #00278A;
+    color: white;
+    padding: 15px;
+    flex: 1;                     /* todas ocupan mismo espacio */
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+/* Fin parametros dentro de los contenedores*/
+
+/* Aumento automatico y desaumento de las contenedores*/
+
+.juegosplay:hover .juegoplay {
+    flex: 0.8; /* todas se achican */
+}
+.juegosplay .juegoplay:hover {
+    flex: 1.5; /* la seleccionada se agranda */
+}
+
+
+/* Cuando paso el cursor sobre el contenedor */
+.juegoplay:hover {
+    transform: scale(1.1);   /* Aumenta el tamaño del contenedor completo */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que la imagen también crezca */
+.juegoplay:hover img {
+    transform: scale(1.2);   /* La imagen crece un poco más */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que el texto también tenga efecto */
+.juegoplay:hover h3 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+/* Fin aumento y desaumento automatico de los contendores*/
+
+
+/*Parametros de las imagenes dentro del contenedor*/
+
+.juegoplay h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fin texto de las imagenes en los contenedores*/
+
+
+/* Configuracion para las imagenes dentro de los contenedores*/
+
+.juegoplay .imagenplay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: 150px;     /* ancho fijo */
+    height: 150px;    /* alto fijo */
+    margin: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222; /* Darle un fondo a las imagenes*/
+    border-radius: 8px; /*Darle borde a las imagenes*/
+    overflow: hidden; /* recorta lo que sobresalga */
+}
+
+
+/* Fin configuracion para las imagenes dentro de los contenedores*/
+
+/*FIN JUEGOS PLAY*/
+
+
+
+/*INICIO SECCION XBOX*/
+
+ /*Titulo para juegos de xbox*/
+.tituloxbox {
+
+	text-align: center;
+	font-family: "Times New Roman", serif;
+	padding: 40px; 
+   	background-color: green ;
+   	color: white;
+   }
+
+   /* Fin titulo juegos de xbox*/
+
+
+
+.juegosxbox{
+
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    width: 100%;            
+    margin-top:0;
+    font-family: "Times New Roman", serif;
+
+}
+
+/* fin contenedor de los juegos*/
+
+
+
+/* Parametros dentro de los contenedores*/
+
+.juegoxbox {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    flex: 1;                     /* todas ocupan mismo espacio */
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+/* Fin parametros dentro de los contenedores*/
+
+/* Aumento automatico y desaumento de las contenedores*/
+
+.juegosxbox:hover .juegoxbox {
+    flex: 0.8; /* todas se achican */
+}
+.juegosxbox .juegoxbox:hover {
+    flex: 1.5; /* la seleccionada se agranda */
+}
+
+
+
+/* Cuando paso el cursor sobre el contenedor */
+.juegoxbox:hover {
+    transform: scale(1.1);   /* Aumenta el tamaño del contenedor completo */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que la imagen también crezca */
+.juegoxbox:hover img {
+    transform: scale(1.2);   /* La imagen crece un poco más */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que el texto también tenga efecto */
+.juegoxbox:hover h3 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* Fin aumento y desaumento automatico de los contendores*/
+
+
+/*Parametros de las imagenes dentro del contenedor*/
+
+.juegoxbox h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fin texto de las imagenes en los contenedores*/
+
+
+/* Configuracion para las imagenes dentro de los contenedores*/
+
+.juegoxbox .imagenxbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: 150px;     /* ancho fijo */
+    height: 150px;    /* alto fijo */
+    margin: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222; /* Darle un fondo a las imagenes*/
+    border-radius: 8px; /*Darle borde a las imagenes*/
+    overflow: hidden; /* recorta lo que sobresalga */
+}
+
+/*Fin congiguracion para las imagenes dentro de los contenedores
+
+/* FIN XBOX*/
+
+/*INICIO NINTENDO*/
+
+.titulonintendo {
+
+	text-align: center;
+	font-family: "Times New Roman", serif;
+	padding: 40px; 
+   	background-color: orange ;
+   	color: white;
+   }
+
+   /* Fin titulo juegos de xbox*/
+
+
+
+.juegosnintendo{
+
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    width: 100%;            
+    margin-top:0;
+    font-family: "Times New Roman", serif;
+
+}
+
+/* fin contenedor de los juegos*/
+
+
+
+/* Parametros dentro de los contenedores*/
+
+.juegonintendo {
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    flex: 1;                     /* todas ocupan mismo espacio */
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+/* Fin parametros dentro de los contenedores*/
+
+/* Aumento automatico y desaumento de las contenedores*/
+
+.juegosnintendo:hover .juegonintendo {
+    flex: 0.8; /* todas se achican */
+}
+.juegosnintendo .juegonintendo:hover {
+    flex: 1.5; /* la seleccionada se agranda */
+}
+
+/* Fin aumento y desaumento automatico de los contendores*/
+
+
+/* Cuando paso el cursor sobre el contenedor */
+.juegonintendo:hover {
+    transform: scale(1.1);   /* Aumenta el tamaño del contenedor completo */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que la imagen también crezca */
+.juegonintendo:hover img {
+    transform: scale(1.2);   /* La imagen crece un poco más */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que el texto también tenga efecto */
+.juegonintendo:hover h3 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+/*Parametros de las imagenes dentro del contenedor*/
+
+.juegonintendo h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fin texto de las imagenes en los contenedores*/
+
+
+/* Configuracion para las imagenes dentro de los contenedores*/
+
+.juegonintendo .imagennintendo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: 150px;     /* ancho fijo */
+    height: 150px;    /* alto fijo */
+    margin: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222; /* Darle un fondo a las imagenes*/
+    border-radius: 8px; /*Darle borde a las imagenes*/
+    overflow: hidden; /* recorta lo que sobresalga */
+}
+
+/*Fin congiguracion para las imagenes dentro de los contenedores
+
+/* FIN NINTENDO*/
+
+
+
+
+.titulopc {
+
+	text-align: center;
+	font-family: "Times New Roman", serif;
+	padding: 40px; 
+   	background-color: gray ;
+   	color: white;
+   }
+
+
+.juegospc{
+
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    width: 100%;            
+    margin-top:0;
+    font-family: "Times New Roman", serif;
+
+}
+
+/* fin contenedor de los juegos*/
+
+
+
+/* Parametros dentro de los contenedores*/
+
+.juegopc {
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    flex: 1;                     
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+/* Fin parametros dentro de los contenedores*/
+
+/* Aumento automatico y desaumento de las contenedores*/
+
+.juegospc:hover .juegopc {
+    flex: 0.8; /* todas se achican */
+}
+.juegospc .juegopc:hover {
+    flex: 1.5; /* la seleccionada se agranda */
+}
+
+/* Fin aumento y desaumento automatico de los contendores*/
+
+
+/* Cuando paso el cursor sobre el contenedor */
+.juegopc:hover {
+    transform: scale(1.1);   /* Aumenta el tamaño del contenedor completo */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que la imagen también crezca */
+.juegopc:hover img {
+    transform: scale(1.2);   /* La imagen crece un poco más */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que el texto también tenga efecto */
+.juegopc:hover h3 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+/*Parametros de las imagenes dentro del contenedor*/
+
+.juegopc h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fin texto de las imagenes en los contenedores*/
+
+
+/* Configuracion para las imagenes dentro de los contenedores*/
+
+.juegopc .imagenpc img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: 150px;     /* ancho fijo */
+    height: 150px;    /* alto fijo */
+    margin: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222; /* Darle un fondo a las imagenes*/
+    border-radius: 8px; /*Darle borde a las imagenes*/
+    overflow: hidden; /* recorta lo que sobresalga */
+}
+
+/*Fin congiguracion para las imagenes dentro de los contenedores
+
+/* FIN NINTENDO*/
+/*FIN DE PRODUCTOS*/
+
+
+
+
+
+
+
+
+/*INICIO SERVICIOS*/
+
+
+.logo2{
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
+	font-weight: 600;
+	font-size: 25px;
+  
+}
+
+
+nave{ 
+	display: flex;
+	height: 80px;
+	background-color: rgb(255, 255, 255);
+	align-items: center;
+	padding: 10px;
+  font-size: 20px;
+}
+
+nave img{
+	height: 80px;
+	align-items: center;
+	margin-left: 70px;
+	margin-right: 20px;
+  margin-top: 30px; 
+  text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color:rgb(119, 0, 255);
+	font-weight: 600;
+	padding-right: 40px;
+	font-size: 20px;
+	padding-bottom: 0;
+  
+}
+
+a:hover{
+	color: black;
+}
+
+
+
+
+
+
+Mensaje h2{
+
+ 	text-align: center;                
+    font-family: "Times New Roman", serif; 
+    color: black;                    
+    background-color: white ;         
+    padding: 20px;                     
+    margin: 0px;                 
+    
+}
+
+
+
+
+
+
+
+
+
+
+seccion_ventas {
+padding: 0;
+
+}
+
+seccion_ventas h2{
+
+ 	text-align: center;                
+    font-family: "Times New Roman", serif; 
+    color: white;                    
+    background-color: #4574D9 ;         
+    padding: 20px;                     
+    margin:  5px;  
+    border-radius: 10px;    
+}
+
+/* Ventas play */
+
+
+.ventas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  width: 100%;
+  align-items: start;
+}
+
+/* Tarjeta */
+.venta-card {
+  background: #908994;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.venta-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 1 30px 90px rgba(0,0,0,0.35);
+}
+
+/* IMAGEN: dentro de un contenedor para recorte */
+.venta-thumb {
+  width: 100;
+  overflow: hidden;
+
+}
+
+/* Para modificar las imagenes dentro de las tarjetas*/
+
+.venta-thumb img {
+  width: 250px;
+  height: 250px;         
+  object-fit: cover;
+  display: block;
+
+}
+.venta-card:hover .venta-thumb img {
+  transform: scale(1.06); 
+}
+
+/* Texto dentro de la tarjeta */
+.venta-nombre {
+  font-size: 0.95rem;
+  color: #111;
+  margin: 10px;
+  text-align: center;
+
+}
+
+
+/*texto del precio dentro de la tarjeta*/
+.venta-precio {
+  font-size: 0.9rem;
+  color: black;
+  margin: 0 10px 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+/* Contenedor de cuadro donde estan las tarjetas de los juegos de play*/
+.ventas-play {
+  background-color: #3D48E1;
+  padding: 32px 28px;
+  margin-bottom: 11px;
+  margin:0; 
+}
+
+
+/* Título Play dentro de la tarjetas */
+.titulo_venta_play {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: white;       
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+
+
+
+/*Seccion para ventas de xbox*/
+
+
+.ventas-xbox{
+
+	background-color: #107C10;
+	padding: 32px 28px;
+	margin-bottom: 1px;
+	margin: 0;
+
+}
+
+/* Título Xbox dentro de las tarjetas */
+.titulo_venta_xbox {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: white;       
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+
+/*Seccion ventas de nintendo*/
+
+.ventas-nintendo{
+
+	background-color: #ECA532;
+	padding: 32px 28px;
+	margin-bottom: 1px;
+	margin: 0;
+
+}
+
+/* Título Xbox dentro de las tarjetas */
+.titulo_venta_nintendo {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: white;       
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.ventas-pc{
+
+	background-color: #50CECA;
+	padding: 32px 28px;
+	margin-bottom: 1px;
+	margin: 0;
+
+}
+
+/* Título Xbox dentro de las tarjetas */
+.titulo_venta_pc {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: white;       
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/*FIN SECCION DE VENTAS*/
+
+/*INICIO SECCION DE ALQUILER*/
+
+
+
+/*Seccion de alquiler*/
+
+seccion_alquiler h2{
+
+ 	text-align: center;                
+    font-family: "Times New Roman", serif; 
+    color: white;                    
+    background-color: #89A1D7 ;         
+    padding: 20px;                     
+    margin:  5px;   
+    font-size: 28px;  
+    border-radius: 10px; 
+}
+
+
+.titulo_alquiler_juegos {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 28px;
+  margin: 0px;
+}
+
+
+.dias_alquiler{
+  
+  color: black;
+  font-size: 16px;
+  margin:0;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+
+}
+
+/* Textos para tarjetas de alquiler */
+.alquiler-nombre {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+ 
+}
+
+
+
+.alquiler-precio {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Times New Roman", serif;
+}
+
+
+
+/*Para la parte de donde esta el texto*/
+
+.alquiler-card {
+  background: #9C9C9C;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer; 
+  display: flex;
+  flex-direction: column;
+  width: 200px; 
+  height: 200px; 
+  margin: 10px;
+}
+
+.alquiler-card:hover {
+  transform: translateY(-8px);
+
+}
+
+/* Contenedor donde esta la imagen */
+.alquiler-thumb {
+  width: 100%;
+  height: 120px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #F4FAFA;
+  padding: 5px;
+}
+
+/* Para modificar parametros dentro del contenedor */
+.alquiler-thumb img {
+  max-width: 100px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Para ajustar parametros de la tarjeta*/
+.alquiler-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+
+
+
+.alquiler-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+
+
+
+/* Fondo donde estan las tarjetas */
+.alquiler-juegos {
+  background-color: #89A1D7;
+  padding: 40px 20px;
+  margin-bottom: 0;
+}
+
+/* FIN DE ALQUILER DE JUEGOS*/
+
+
+
+
+
+/*INICIO MEMBRESIA*/
+
+seccion_membresia h2{
+
+
+text-align: center;                
+    font-family: "Times New Roman", serif; 
+    color: white;                    
+    background-color: #6D580D ;         
+    padding: 20px;                     
+    margin:  5px;   
+    font-size: 28px;  
+    border-radius: 10px; 
+
+}
+
+
+.titulo_membresia_juegos {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 28px;
+  margin: 0px;
+}
+
+
+
+
+.dias_membresia{
+  
+  color: black;
+  font-size: 16px;
+  margin:0;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+
+}
+
+/* Textos para tarjetas de alquiler */
+.membresia-nombre {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+ 
+}
+
+
+
+.membresia-precio {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Times New Roman", serif;
+}
+
+
+
+/*Para la parte de donde esta el texto*/
+
+.membresia-card {
+  background: #9C9C9C;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer; 
+  display: flex;
+  flex-direction: column;
+  width: 200px; 
+  height: 200px; 
+  margin: 10px;
+}
+
+.membresia-card:hover {
+  transform: translateY(-8px);
+
+}
+
+/* Contenedor donde esta la imagen */
+.membresia-thumb {
+  width: 100%;
+  height: 120px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #F4FAFA;
+  padding: 5px;
+}
+
+/* Imagen dentro del contenedor */
+.membresia-thumb img {
+  max-width: 100px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Contenedor de texto */
+.membresia-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+
+
+
+.membresia-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Título de sección */
+
+
+/* Fondo donde estan las tarjetas */
+
+.membresia-juegos {
+  background-color: #6D580D;
+  padding: 40px 20px;
+  margin-bottom: 0;
+}
