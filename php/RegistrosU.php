@@ -26,7 +26,7 @@ $resultado = mysqli_query($conexion, $insertar);
 s
 if (!$resultado) {
 
-    eho "Error al registrar Usuario";
+    echo "Error al registrar Usuario";
 }
 
 else {
@@ -36,5 +36,6 @@ else {
     window.history.go(-1);</script>';
 
 }
+
 
 ?>
